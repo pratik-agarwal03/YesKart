@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "400571059189",
+    "firebase_url": "https://yeskart-3806c.firebaseio.com",
+    "project_id": "yeskart-3806c",
+    "storage_bucket": "yeskart-3806c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400571059189:android:3c77362d995a6059eb2ebc",
+        "android_client_info": {
+          "package_name": "com.example.yeskart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400571059189-45155pp8kgnfrk632ecuu2av40l8cj6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpYHszEl7G_7HL4doVlMXBvdFyYRkzU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400571059189-45155pp8kgnfrk632ecuu2av40l8cj6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
