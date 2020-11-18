@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="35dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/productImage"
+        android:layout_toRightOf="@+id/productImage"
+        android:text="PRODUCT NAME"
+        android:textAllCaps="true"
+        android:textColor="#00574b"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+        android:layout_alignBottom="@+id/productImage"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/productImage"
+        android:text="This is product description"
+        android:textColor="#00574b"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/deliverTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:layout_marginLeft="15dp"
+        android:text="Deliver to: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/deliveryAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliverTo"
+        android:layout_marginLeft="15dp"
+        android:text="Pratik Agarwal\nPune"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:id="@+id/price_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliveryAdd"
+        android:layout_margin="15dp"
+        android:background="#000000"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_margin="1dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:padding="3dp"
+                android:text="Quantity"
+                android:textColor="#00574b"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:text="Price per piece(INR)"
+                android:textColor="#00574b"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_marginRight="10dp"
+                android:padding="3dp"
+                android:text="Product Quantity"
+                android:textColor="#00574b"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:text="Price per piece"
+                android:textColor="#00574b"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="108dp"
+            android:layout_margin="1dp"
+            android:background="#ffffff"
+            android:paddingTop="130dp"></TableRow>
+
+        <TableRow
+            android:layout_margin="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:padding="3dp"
+                android:text="Total"
+                android:textColor="#ff0000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:text="Price per piece"
+                android:textColor="#ff0000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttons"
+        android:text="ORDER"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+</RelativeLayout>

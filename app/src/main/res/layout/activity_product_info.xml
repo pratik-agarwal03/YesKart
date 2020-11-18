@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductInfoActivity">
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="PRODUCT NAME"
+        android:textColor="#125FBC"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pName"
+        android:layout_marginLeft="20dp"
+        android:text="This is product description"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/pImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/pDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/pPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pImg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="Price: ₹4545"
+        android:textColor="#ff0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pPrice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Delivery by: "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/expected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/delivery"
+        android:layout_toRightOf="@+id/delivery"
+        android:text="Hello"
+        android:textColor="#071B95"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expected_date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Available in Stock: "
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/availableInStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expected_date"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/stock"
+        android:text="215"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availableInStock"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/order_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stock"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/minus"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availableInStock"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/order_qty"
+        android:text="+"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/Buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttons"
+        android:text="BUY"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+</RelativeLayout>

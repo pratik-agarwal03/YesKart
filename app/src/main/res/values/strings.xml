@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Yeskart</string>
+    <string name="information">YesKart is a online marketplace for selling and buying of local handicrafts which includes paintings, pots,etc from the tribal people.Selling and purchase made easy!</string>
+    <string name="contactUs">Call us 24/7 at our toll-free support number: 5151 5151</string>
+    <string name="safety">YesKart ensures right and safe delivery of the ordered products.YesKart also ensures safety in  online payment.</string>
+    <string name="navigation_drawer_open">YesKart</string>
+    <string name="navigation_drawer_close">YesKart</string>
+    <string-array name="product_category_list">
+        <item>Painting</item>
+        <item>Handicrafts</item>
+        <item>Other</item>
+    </string-array>
 </resources>

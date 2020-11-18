@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SplashScreen extends AppCompatActivity {
 
     public static FirebaseAuth auth;
-    private static int SPLASH_TIME = 5000;
+    private static int SPLASH_TIME = 2000;
     ImageView cart;
 
     @Override
@@ -21,7 +21,8 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         cart = findViewById(R.id.cart);
         auth = FirebaseAuth.getInstance();
-        cart.animate().translationX(2000f).setDuration(4000).setStartDelay(3000);
+        //auth.signOut();
+        cart.animate().translationX(2300f).setDuration(4000).setStartDelay(3000);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -30,7 +31,7 @@ public class SplashScreen extends AppCompatActivity {
                     startActivity(i);
                     finish();
                 } else {
-                    Intent i = new Intent(SplashScreen.this, HomeActivity.class);
+                    Intent i = new Intent(SplashScreen.this, MainActivity.class);
                     startActivity(i);
                     finish();
                 }
